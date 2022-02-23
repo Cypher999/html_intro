@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style="background:black">
+    <div class="container" onclick="fullscreen()">
+      <img src="rat_logo_new.png" alt="">
+      <h2>GOOD PLACE FOR PROGRAMER</h2>
+      <div>
+      </div>
+      <h3>JUDUL_VIDEO_DISINI</h3>
+    </div>
+  </body>
+  <script type="text/javascript">
+  function fullscreen(){
+    var elem = document.getElementsByClassName('container')[0];
+    elem.requestFullscreen();
+    setTimeout(function(){
+      document.getElementsByTagName("img")[0].classList.add("title");
+      document.getElementsByTagName("h2")[0].classList.add("title-header");
+      document.getElementsByTagName("div")[1].classList.add("box");
+      document.getElementsByTagName("h3")[0].classList.add("video_title");
+    },5000);
+  }
+  </script>
+</html>
